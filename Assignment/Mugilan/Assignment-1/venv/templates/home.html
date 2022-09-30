@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+<meta name="generator" content="Hugo 0.88.1">
+<title>Flask Authentication | Bootstrap v5.1</title>
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/assets/css/custom.css">
+
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-lg bg-light sticky-top" style="background-color: #8e959c;">
+            <div class="container col-3">
+              <a class="navbar-brand" href="#">
+                <img src="https://img.icons8.com/nolan/64/work.png"/> MAX BOIS</a>
+                  
+            </div>
+            <div class="container-fluid col-9">
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="/contact">contact</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          crew
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Kirubalini</a></li>
+                          <li><a class="dropdown-item" href="#">Ameer</a></li>
+                          <li><a class="dropdown-item" href="#">Kirupakaran</a></li>
+                          <li><a class="dropdown-item" href="#">Mugilan</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about">about us</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+          </nav>
+
+          <div class="container my-lg-5 m-auto align-self-center">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 p-3">
+                    <img src="https://img.icons8.com/dusk/125/000000/woman-head.png"/>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Kirubalini</h5>
+                      <p class="card-text">810019104034</p>
+                      <p class="card-text">The Leader</p>
+                      <p class="card-text">specialised in mind reading</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 p-3">
+                    <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/125/000000/external-male-tattoo-flaticons-lineal-color-flat-icons-4.png"/>                      </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Ameer Abbas</h5>
+                      <p class="card-text">810019104040</p>
+                      <p class="card-text">Crew Member</p>
+                      <p class="card-text">specialised in gathering collection  </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 p-3">
+                    <img src="https://img.icons8.com/external-others-iconmarket/125/000000/external-male-valentines-day-others-iconmarket-4.png"/>
+                                      </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Kirupakaran</h5>
+                      <p class="card-text">810019104035</p>
+                      <p class="card-text">Crew Member</p>
+                      <p class="card-text">specialised in problem creating</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4 p-3">
+                    <img src="https://img.icons8.com/clouds/125/000000/user-male.png"/>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Mugilan</h5>
+                      <p class="card-text">810019104043</p>
+                      <p class="card-text">Crew Member</p>
+                      <p class="card-text">specilised in nothing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+    <footer class="container-fluid sticky-bottom bg-light py-lg-5">
+      <div class="row container mx-auto align-item-center">
+        <div class="col-3">
+          <a class="navbar-brand" href="home">
+            <img src="https://img.icons8.com/nolan/200/work.png"/> </a>
+        </div>
+        <div class="col-3">
+          <h4 class="pr-5">LINK</h4>
+          <ul >
+            <li style="list-style: none;" class="mb-2"><a href="home">Home</a></li>
+            <li style="list-style: none;" class="mb-2"><a href="contact">Contact</a></li>
+            <li style="list-style: none;" class="mb-2"><a href="crew">Crew</a></li>
+            <li style="list-style: none;" class="mb-2"><a href="about">About us</a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h4 class="pr-5">Social Media</h4>
+          <ul >
+            <li style="list-style: none;" class="mb-2"><a href="#">
+              <img src="https://img.icons8.com/cute-clipart/30/000000/instagram-new.png"/> Instagarm
+            </a></li>
+            <li style="list-style: none;" class="mb-2"><a href="#">
+              <img src="https://img.icons8.com/color/30/000000/whatsapp--v1.png"/> Whatsapp
+            </a></li>
+            <li style="list-style: none;" class="mb-2"><a href="#">
+              <img src="https://img.icons8.com/color/30/000000/linkedin-circled--v1.png"/> linkedin
+            </a></li>
+            <li style="list-style: none;" class="mb-2"><a href="#">
+              <img src="https://img.icons8.com/office/30/000000/facebook-new.png"/> facebook
+            </a></li>
+          </ul>
+        </div>
+        <div class="col-3">
+          <h4>COMMUNITY</h4>
+          <li style="list-style: none;" class="mx-3"> MAX BOIS   </li>
+        </div>
+        
+      </div>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
