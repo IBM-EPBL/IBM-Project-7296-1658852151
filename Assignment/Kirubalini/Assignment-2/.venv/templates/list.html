@@ -27,6 +27,9 @@
         <a class="nav-link" href="/addstudent">Add New Student</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="/sign_in">Sign-in</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="/list">List Student</a>
       </li>
     </ul>
@@ -40,17 +43,17 @@
                
                 <tr>
                   <th scope="col">NAME</th>
-                  <th scope="col">ADDRESS</th>
-                  <th scope="col">CITY</th>
-                  <th scope="col">PINCODE</th>
+                  <th scope="col">EMAIL</th>
+                  <th scope="col">ROLLNO</th>
+                  <th scope="col">PASSWORD</th>
                 </tr>
               </thead>
               {% for row in students %}
             <tr>
                <td>{{row["name"]}}</td>
-               <td>{{row["addr"]}}</td>
-               <td> {{ row["city"]}}</td>
-               <td>{{row['pin']}}</td>	
+               <td>{{row["email"]}}</td>
+               <td> {{ row["rollno"]}}</td>
+               <td>{{row["password"]}}</td>	
             </tr>
          {% endfor %}
                 

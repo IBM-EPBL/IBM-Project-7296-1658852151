@@ -13,18 +13,22 @@ def home():
 def new_student():
    return render_template('add_student.html')
 
+@app.route('/sign_in')
+def sign_in():
+   return render_template('sign-in.html')
+
 @app.route('/addrec',methods = ['POST', 'GET'])
 def addrec():
    if request.method == 'POST':
       try:
          name = request.form['name']
-         addr = request.form['address']
-         city = request.form['city']
-         pin = request.form['pin']
+         email = request.form['email']
+         rollno = request.form['rollno']
+         password = request.form['password']
          
          with sql.connect("student_database.db") as con:
             cur = con.cursor()
-            cur.execute("INSERT INTO students (name,addr,city,pin) VALUES (?,?,?,?)",(name,addr,city,pin) )
+            cur.execute("INSERT INTO students (name,email,rollno,password) VALUES (?,?,?,?)",(name,email,rollno,password))
             con.commit()
             msg = "Record successfully added!"
       except:
